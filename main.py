@@ -23,7 +23,12 @@ def main():
             print("Your password has been encoded and stored!")
 
         if user_choice == 2:
-            print("hi")
+            orignial_password = ''
+            for i in encoded_password:
+                new = int(i) - 3
+                orignial_password += str(new)
+            print(f'The enncoded password is {encoded_password}, and the originnal password is {orignial_password}')
+
 
         if user_choice == 3:
             break
